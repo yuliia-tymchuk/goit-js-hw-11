@@ -1,11 +1,13 @@
+import axios from 'axios';
+
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 axios.defaults.headers.common['Authorization'] = 'Client-ID u_79wq4chor4';
 
-class PixabayAPI {
+export class PixabayAPI {
   #page = 1;
   #query = '';
   #totalPages = 0;
-  #perPage = 30;
+  #perPage = 40;
   #params = {
     params: {
       key: '30554717 - dcc80d5299a215984c1269f52',
