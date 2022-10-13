@@ -10,7 +10,7 @@ export class PixabayAPI {
   #perPage = 40;
   #params = {
     params: {
-      key: '30554717 - dcc80d5299a215984c1269f52',
+      key: '30554717-dcc80d5299a215984c1269f52',
       q: 'all images',
       image_type: 'photo',
       orientation: 'horizontal',
