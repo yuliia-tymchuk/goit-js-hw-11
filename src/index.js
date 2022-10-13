@@ -9,6 +9,11 @@ import { createMarkup } from './js/createMarkup';
 
 const pixabay = new PixabayAPI();
 
+var gallery = new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+});
+gallery.refresh();
+
 const options = {
   root: null,
   rootMargin: '100px',
