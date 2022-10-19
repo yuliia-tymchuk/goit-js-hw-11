@@ -18,20 +18,20 @@ export class PixabayAPI {
   };
 
   async getPhotos() {
-    const url = `https://pixabay.com/api/?key=${KEY}&q=${
-      this.#query
-    }&image_type=photo&page=${this.#page}`;
+    const url = `?key=${KEY}&q=${this.#query}&image_type=photo&page=${
+      this.#page
+    }`;
 
     const { data } = await axios.get(url, this.#params);
     return data;
   }
 
-  set query(newQuery) {
-    this.#query = newQuery;
-  }
-
   get query() {
     return this.#query;
+  }
+
+  set query(newQuery) {
+    this.#query = newQuery;
   }
 
   incrementPage() {
