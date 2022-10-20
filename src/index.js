@@ -33,7 +33,7 @@ const callback = async function (entries, observer) {
         skrollPage();
         gallery.refresh();
       } catch (error) {
-        console.lod(error);
+        console.log(error);
         clearPage();
       } finally {
         spinnerStop();
