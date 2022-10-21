@@ -34,7 +34,7 @@ const callback = async function (entries, observer) {
         gallery.refresh();
       } catch (error) {
         console.log(error);
-        clearPage();
+        // clearPage();
       } finally {
         spinnerStop();
       }
